@@ -47,9 +47,9 @@ function TodoProvider(props) {
         saveTodos(newTodos);
     };
 
-    React.useEffect(() => {
-        console.log('use effect');
-    }, [totalTodos]);
+    // React.useEffect(() => {
+    //     console.log('use effect');
+    // }, [totalTodos]);
 
     const deleteTodo = (text) => {
         const todoIndex = todos.findIndex(todo => todo.text === text);
